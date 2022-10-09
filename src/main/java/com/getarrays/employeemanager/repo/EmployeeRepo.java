@@ -13,5 +13,5 @@ public interface EmployeeRepo extends JpaRepository<Employee, Long> {
     // this called query method, spring will understand what we want
     // and because this is optional, sometimes the id given not present
     // we add optional
-    Optional findEmployeeById(Long id);
+    Optional<Employee> findEmployeeById(Long id);
 }
