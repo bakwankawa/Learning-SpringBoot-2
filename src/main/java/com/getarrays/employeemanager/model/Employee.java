@@ -18,6 +18,9 @@ public class Employee implements Serializable { // serializable is to make this 
     @Column(nullable = false, updatable = false) // make this column cant null and cant update
     private String employeeCode;
 
+    public Employee() {
+    }
+
     public Employee(String name, String email, String jobTitle, String phone, String imageUrl, String employeeCode) {
         this.name = name;
         this.email = email;
